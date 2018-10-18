@@ -5,7 +5,7 @@ using System.Management;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VSAWF
+namespace WindowsAntivirus
 {
     /// <summary>
     /// Windows Antivirus Module
