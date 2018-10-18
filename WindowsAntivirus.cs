@@ -27,7 +27,6 @@ namespace VSAWF
                     foreach (var instance in searcherInstance)
                     {
                         av.Add(instance["displayName"].ToString());
-                        break;
                     }
 
                 }
@@ -52,21 +51,21 @@ namespace VSAWF
                     var searcherInstance = searcher.Get();
                     foreach (var instance in searcherInstance)
                     {
-						switch (instance["productState"].ToString())
-						{
-							case "393472":
-								return false;
-								break;
-							case "397584":
-								return true;
-								break;
-							case "397568":
-								return true;
-								break;
-							default:
-								return false;
-								break;
-						}
+			switch (instance["productState"].ToString())
+			{
+				case "393472":
+					return false;
+					break;
+				case "397584":
+					return true;
+					break;
+				case "397568":
+					return true;
+					break;
+				default:
+					return false;
+					break;
+			}
                         
                     }
 
